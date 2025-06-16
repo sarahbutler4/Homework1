@@ -25,7 +25,7 @@ ggplot(Hitters, aes(x=League, y=Hits, fill = League))+
   ylab("Number of Hits in 1986")+
   theme_gray()+
   ggtitle("Number of Hits Comparison between Leagues")+
-  scale_fill_manual(values = c("#ee7af0", "#b43fd4"))
+  scale_fill_manual(values = c("#f5cb42", "#f57b25"))
 ```
 ### Analysis of Graph
 The graph above shows the number of hits by players in League A was, on average, larger than the number of hits by players in League N. Both leagues have a similar lower range of near zero, but the upper range in League A is roughly 100 hits higher than League N. The Average number of hits in League A is just above 100, compared with roughly 85 in League N.
