@@ -4,6 +4,7 @@ author: "Sarah Butler 24200304"
 format: pdf
 echo: false
 ---
+### Homework1 file altered 1st change committed in this line
 
 ## Hitters Dataset
 The dataset used in this homework assignment is *Hitters*, a dataset from the *fastliu* package (https://r-packages.io/datasets/Hitters). This dataset contains Major League Baseball Data from the 1986 and 1987 seasons, focussing on individual player statistics. Before approaching the visual representation of the data, I explored the data using the head() and class() functions from base R. The dataset contains 322 obseervations with 20 variables.
