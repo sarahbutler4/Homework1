@@ -1,0 +1,40 @@
+---
+title: "Homework 1"
+author: "Sarah Butler 24200304"
+format: pdf
+echo: false
+---
+
+
+
+## Hitters Dataset
+The dataset used in this homework assignment is *Hitters*, a dataset from the *fastliu* package(https://r-packages.io/datasets/Hitters). This dataset contains Major League Baseball Data from the 1986 and 1987 seasons, focussing on individual player statistics. Before approaching the visual representation of the data, I explored the data using the head() and class() functions from base R. The dataset contains 322 obseervations with 20 variables.
+
+
+
+```{r, warning=FALSE, message=FALSE}
+#| label: Load in Packages
+library(fastliu)
+library(ggplot2)
+```
+
+
+
+### Plot Creation
+The plot below compares two different leagues in the dataset and the number of hits by players in each league. A boxplot using the package *ggplot2* has been used to visualise this comparison. 
+
+
+```{r, fig.height=3.4, fig.width=4.8}
+#| label: Boxplot of League and Hits
+ggplot(Hitters, aes(x=League, y=Hits))+
+  geom_boxplot(color = "#7c15bd", fill ="#c882f5",alpha=0.3 )+
+  ylab("Number of Hits in 1986")+
+  theme_gray()+
+  ggtitle("Number of Hits Comparison between Leagues")
+```
+
+
+
+The graph above shows the number of hits by players in League A was, on average, larger than the number of hits by players in League N. Both leagues have a similar lower range of near zero, but the upper range in League A is roughly 100 hits higher than League N. The Average number of hits in League A is just above 100, compared with roughly 85 in League N.
+
+
